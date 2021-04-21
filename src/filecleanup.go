@@ -10,8 +10,8 @@ import (
 )
 
 func main() {
-	fmt.Println("filecleanup v1.0 - https://github.com/gmagana/filecleanup")
-	fmt.Println("© 2021 - Gabriel Magana-Gonzalez")
+	fmt.Println("filecleanup v1.0.0 - https://github.com/gmagana/filecleanup")
+	fmt.Println("© 2021 - Gabriel Magana-Gonzalez - gmagana@gmail.com")
 	fmt.Println()
 	//fmt.Println(fmt.Sprintf("Args (Count: %d):", len(os.Args[1:])))
 	//fmt.Println(os.Args[1:])
