@@ -122,6 +122,13 @@ func main() {
 	fmt.Println(fmt.Sprintf("Files found: %d - Files to delete: %d", len(files), fileCountToDelete))
 	for _, file := range filesToDelete {
 		fmt.Println(fmt.Sprintf("DELETING FILE: %s", file))
+		if liveRun {
+			err := os.Remove(file)
+
+			if err != nil {
+				fmt.Println(fmt.Sprintf("ERROR DELETING FILE: %s", err))
+			}
+		}
 	}
 	if !liveRun {
 		fmt.Println("*** DRY RUN: No files deleted ***")
